@@ -1,0 +1,157 @@
+
+.landing .overlay {
+    background: none; /* Asegúrate de que no haya superposición de color */
+}
+
+.landing .logo {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+/* Asegúrate de que el logo no tenga opacidad */
+.landing .logo img {
+    opacity: 1;
+}
+
+/* Tipografía del eslogan */
+.landing .slogan {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    font-weight: bold;
+    line-height: 1.3;
+}
+/* General Section Styles */
+header.landing, .about, .mishabilidades {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Landing Header */
+header.landing {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black; /* Cambiar de rgba(0, 0, 0, 0.5) a black */
+}
+
+header.landing h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+header.landing .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header.landing .btn-primary:hover {
+    background-color: #0056b3;
+}
+.landing .overlay {
+    background-color: transparent; /* Hace el fondo transparente */
+    padding: 0; /* Elimina el espacio interior */
+    border-radius: 0; /* Elimina las esquinas redondeadas */
+    box-shadow: none; /* Elimina la sombra */
+}
+/* Estilos del contenedor y el logo */
+.landing {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Control de contenido que excede */
+    color: white; /* Asegúrate de la visibilidad */
+}
+
+
+.landing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container {
+    position: relative;
+    animation: logoFall 2s ease-out; /* La animación dura 2 segundos */
+    display: flex;
+    justify-content: center; /* Asegura que el logo esté centrado horizontalmente */
+    align-items: center; /* Centrado verticalmente */
+    width: 100%;  /* Asegura que ocupe el 100% del contenedor */
+    height: 100%; /* Asegura que ocupe el 100% del contenedor */
+}
+
+/* Animación de caída del logo */
+@keyframes logoFall {
+    0% {
+        transform: translateY(-100vh); /* Comienza fuera de la pantalla (arriba) */
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(50px); /* Un poco antes de llegar al final */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0); /* Llega a su posición final */
+        opacity: 1;
+    }
+}
+
+/* Ajustamos la propiedad para aumentar el tamaño del logo */
+.logo {
+    width: 200%; /* Aumenta el tamaño relativo */
+    height: auto; /* Mantiene la proporción del logo */
+    max-width: none; /* Elimina restricciones de tamaño máximo */
+    animation: logoFall 2s ease-out forwards; /* Asegúrate de mantener la animación */
+}
+
+.logo-container {
+    text-align: center; /* Centra todo el contenido horizontalmente */
+    color: #F5793B; /* Color del texto */
+    display: flex; /* Para organizar los elementos en columna */
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 1rem; /* Espaciado entre los elementos */
+}
+
+.logo-container img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 150px; /* Controla el tamaño máximo de la imagen */
+    height: auto; /* Mantiene las proporciones */
+}
+
+.logo-container .title {
+    font-family: 'PT Sans', sans-serif; /* Fuente principal */
+    font-size: 3rem; /* Tamaño del texto */
+    font-weight: 700; /* Peso de la fuente */
+    margin: 0; /* Sin margen adicional */
+}
+
+.logo-container .subtitle {
+    font-family: 'Lora', serif; /* Fuente secundaria */
+    font-style: italic; /* Aplica cursiva */
+    font-size: 2rem; /* Tamaño del subtítulo */
+    margin: 0; /* Sin margen adicional */
+}
+
+html {
+    background-color: #f4f4f4; /* Cambiar el color de fondo del html */
+}
+
+body {
+    background-color: #f4f4f4; /* Cambiar el color de fondo del body */
+}
+
